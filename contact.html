@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>AkoSophia - Contact</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">AkoSophia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#projectrow">PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#services">SERVICES</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <div class="container py-5">
+    <h2 class="text-center pb-4"><b>Contact Us</b></h2>
+    <p class="text-center text-muted pb-4">Have questions or want to work with us? Send us a message!</p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Subject of your message" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="6" placeholder="Type your message here..." required></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn" style="background-color:#ebd329e8;">Send Message</button>
+          </div>
+        </form>
+
+        <!-- Optional Success Message -->
+        <div id="successMessage" class="alert alert-success mt-3 d-none" role="alert">
+          Thank you! Your message has been sent.
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Optional: Simple front-end form handler -->
+  <script>
+    const form = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Here you can add actual form submission to backend
+      successMessage.classList.remove('d-none');
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>

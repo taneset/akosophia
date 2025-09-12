@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>AkoSophia - AI Integration & Deployment</title>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 15px;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">AkoSophia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projectrow">PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleInterval" class="carousel slide pb-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background: url('img/slider2.jpeg'); background-size: cover; height: 800px;" data-bs-interval="10000">
+        <div class="row1 text-white" id="banner">
+          <h2 class="pt-2 pb-2">Deploy AI Safely<br>Maximize Business Efficiency</h2>
+          <p>Reliable AI integration, process evaluation, and production-ready solutions.</p>
+          <button type="submit" class="btn btn-warning">LEARN MORE</button>
+          <button type="submit" class="btn btn-primary">GET STARTED</button>
+        </div>
+      </div>
+      <div class="carousel-item" style="background: url('img/slider1.jpeg'); background-size:cover; height:800px;" data-bs-interval="2000">
+        <div class="row1" id="banner">
+          <h2 class="pt-2 pb-2">AI Solutions for Real Workflows</h2>
+          <p>Mitigating risks and ensuring privacy while enhancing productivity.</p>
+          <button type="submit" class="btn btn-warning">LEARN MORE</button>
+          <button type="submit" class="btn btn-primary">GET STARTED</button>
+        </div>
+      </div>
+      <div class="carousel-item" style="background: url('img/slider3.jpeg'); background-size: cover; height: 800px;">
+        <div class="row1" id="banner">
+          <h2 class="pt-2 pb-2">From Evaluation to Production</h2>
+          <p>We help integrate AI safely into business processes.</p>
+          <button type="submit" class="btn btn-warning">LEARN MORE</button>
+          <button type="submit" class="btn btn-primary">GET STARTED</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <!-- Welcome -->
+  <div class="container-fluid pb-4">
+    <h2 class="text-center pt-3 pb-4"><b>Welcome to AkoSophia</b></h2>
+    <div class="row text-center mt-4 justify-content-center">
+      <div class="col-md-5" id="welcol1">
+        <p class="welcome-para">We specialize in deploying AI in production, ensuring data privacy, and integrating LLMs into real-world workflows.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center pt-5">
+      <div class="col-md-2 text-center">
+        <h1><i class="bi bi-bell-fill" style="color: indigo;"></i></h1>
+        <h5 class="pt-3" style="color: indigo;">PROCESS EVALUATION</h5>
+        <p>Identify tasks that can benefit from AI while reducing risks and increasing efficiency.</p>
+        <button type="submit" class="wel-btn">LEARN MORE</button>
+      </div>
+      <div class="col-md-2 text-center">
+        <h1><i class="bi bi-envelope-fill" style="color: indigo;"></i></h1>
+        <h5 class="pt-3" style="color: indigo;">SAFE INTEGRATION</h5>
+        <p>Integrate AI into workflows safely, maintaining data privacy and reliability.</p>
+        <button type="submit" class="wel-btn">LEARN MORE</button>
+      </div>
+      <div class="col-md-2 text-center">
+        <h1><i class="bi bi-filter-square-fill" style="color: indigo;"></i></h1>
+        <h5 class="pt-3" style="color: indigo;">PRODUCTION OVERSIGHT</h5>
+        <p>Monitor AI in production, minimizing risks and improving performance.</p>
+        <button type="submit" class="wel-btn">LEARN MORE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="container py-5" id="services">
+    <h2 class="text-center pb-5"><b>Our Services</b></h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 text-center p-4 service-card">
+          <div class="card-body">
+            <h1><i class="bi bi-gear-wide-connected" style="color: indigo;"></i></h1>
+            <h5 class="card-title mt-3">How We Work</h5>
+            <p>We begin with scoping workshops to fully understand your challenges. 
+            Through pilot projects and expert partnerships, we validate solutions before enterprise-scale deployment that delivers measurable value.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 text-center p-4 service-card">
+          <div class="card-body">
+            <h1><i class="bi bi-lightbulb-fill" style="color: #ebd329e8;"></i></h1>
+            <h5 class="card-title mt-3">Consulting & Advisory</h5>
+            <p>Explore AI opportunities with clarity. We provide readiness assessments, solution evaluations, and implementation strategies—while empowering your teams to make informed decisions.</p>
+            <ul class="list-unstyled text-start mt-3">
+              <li>✔ AI readiness analysis</li>
+              <li>✔ Solution evaluation</li>
+              <li>✔ Implementation strategy</li>
+              <li>✔ Team enablement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 text-center p-4 service-card">
+          <div class="card-body">
+            <h1><i class="bi bi-building-lock" style="color: indigo;"></i></h1>
+            <h5 class="card-title mt-3">Enterprise-Grade AI</h5>
+            <p>From sensitive data handling to organization-wide rollouts, we design and deliver AI solutions built for scale, resilience, and compliance with enterprise security standards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <h2 class="pb-6 pb-4 text-center"><b>Projects</b></h2>
+  <div class="row" id="projectrow">
+    <div class="col-md-3 project-col" style="background: url(img/a.jpg) center/cover no-repeat;">
+      <h6 class="projecthead"><b>SCITRUE</b></h6>
+      <p class="projectpara">AI-enhanced solutions for automating evaluation and business processes efficiently.</p>
+      <button type="submit" class="pr-btn"><b>LAUNCH CASE STUDY</b></button>
+    </div>
+    <div class="col-md-3 project-col" style="background: url(img/b.jpg) center/cover no-repeat;">
+      <h6 class="projecthead"><b>FEEDBACK SYSTEM</b></h6>
+      <p class="projectpara">Optimizing supervision and evaluation processes using AI safely.</p>
+      <button type="submit" class="pr-btn"><b>LAUNCH CASE STUDY</b></button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
