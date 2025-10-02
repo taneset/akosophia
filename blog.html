@@ -3,22 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <title>AkoSophia - Blog</title>
+  <title>AkoSophia - AI Insights & Innovations</title>
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    /* Navbar logo same as index page */
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .card-title { font-size: 1.5rem; }
+    .card-body p { font-size: 1rem; }
+
+    .card { border-radius: 12px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0px 10px 25px rgba(0,0,0,0.1); }
+
+    h2 { font-weight: bold; margin-bottom: 30px; text-align: center; }
+    .container { max-width: 900px; margin: auto; }
+
+    a.btn-outline-primary { margin-top: 10px; }
+
+  </style>
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">AkoSophia</a>
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logot.png" alt="AkoSophia Logo">
+        AkoSophia
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#projectrow">PROJECTS</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#services">SERVICES</a></li>
@@ -32,9 +58,95 @@
 
   <!-- Blog Section -->
   <div class="container py-5">
-    <h2 class="text-center pb-4"><b>Blog</b></h2>
-    <p class="text-center text-muted">Our blog is coming soon. Stay tuned for updates!</p>
+    <h2>Explore how AI is shaping the world. Discover how it can solve real-world problems by capturing patterns, understanding emotions, and driving innovation.</h2>
+
+    <!-- 1. Human Emotions & Breath -->
+    <div class="card mb-4 shadow-sm border-0">
+      <div class="card-body">
+        <h3 class="card-title">🌬️ Reading Emotions from Breath</h3>
+        <p class="text-muted"><i>By Joshua Bensemann et al.</i></p>
+        <p><b>AI can detect human emotions from breath.</b> We found that subtle signals in exhaled air reflect shared emotional experiences during movies and events.</p>
+        <h5 class="mt-4"><b>What We Learned</b></h5>
+        <ul>
+          <li>Emotions can be tracked in real time without invasive methods.</li>
+          <li>Crowd reactions can be linked to what people see and hear.</li>
+          <li>This approach could help monitor wellbeing and engagement in everyday settings.</li>
+        </ul>
+        <p><a href="https://ieeexplore.ieee.org/abstract/document/10123109" target="_blank" class="btn btn-outline-primary">📖 Read More</a></p>
+      </div>
+    </div>
+
+    <!-- 2. Eye Gaze & AI Attention -->
+    <div class="card mb-4 shadow-sm border-0">
+      <div class="card-body">
+        <h3 class="card-title">👀 AI Learns from Human Attention</h3>
+        <p class="text-muted"><i>By Joshua Bensemann et al.</i></p>
+        <p><b>Human eye patterns align closely with transformer attention.</b> Early layers of AI models show strongest human-model alignment. Architecture matters more than sheer model size.</p>
+        <h5 class="mt-4"><b>Key Takeaways</b></h5>
+        <ul>
+          <li>Humans and AI often pay attention to the same words.</li>
+          <li>Better AI models can be designed by observing natural reading patterns.</li>
+        </ul>
+        <p><a href="https://aclanthology.org/2022.cmcl-1.9/" target="_blank" class="btn btn-outline-primary">📖 Read More</a></p>
+      </div>
+    </div>
+
+    <!-- 3. AI for Scientific Claims -->
+    <div class="card mb-4 shadow-sm border-0">
+      <div class="card-body">
+        <h3 class="card-title">🧪 AI That Verifies Scientific Claims</h3>
+        <p class="text-muted"><i>By Neşet Özkan Tan et al.</i></p>
+        <p><b>AI can check scientific claims reliably.</b> It combines multiple sources to provide clear, traceable explanations for complex research findings.</p>
+        <h5 class="mt-4"><b>Why It Matters</b></h5>
+        <ul>
+          <li>Ensures scientific claims are accurate and trustworthy.</li>
+          <li>Links explanations to original research for transparency.</li>
+        </ul>
+        <p><a href="https://ojs.aaai.org/index.php/AAAI-SS/article/view/31209" target="_blank" class="btn btn-outline-primary">📖 Read More</a></p>
+      </div>
+    </div>
+
+    <!-- 4. AI for Genetics -->
+    <div class="card mb-4 shadow-sm border-0">
+      <div class="card-body">
+        <h3 class="card-title">🧬 AI for Understanding Genetics</h3>
+        <p class="text-muted"><i>By Neşet Özkan Tan et al.</i></p>
+        <p><b>AI helps predict genetic traits and diseases.</b> It identifies patterns in DNA that influence health, helping researchers understand complex genetics.</p>
+        <h5 class="mt-4"><b>Impact</b></h5>
+        <ul>
+          <li>Helps predict risk for diseases like gout.</li>
+          <li>Focuses on the most important genetic factors.</li>
+        </ul>
+        <p><a href="https://doi.org/10.1101/2022.07.07.499217" target="_blank" class="btn btn-outline-primary">📖 Read More</a></p>
+      </div>
+    </div>
+
+    <!-- 5. Smaller AI Models -->
+    <div class="card mb-4 shadow-sm border-0">
+      <div class="card-body">
+        <h3 class="card-title">🤖 Smarter AI Without Huge Computers</h3>
+        <p class="text-muted"><i>By Tim Hartill et al.</i></p>
+        <p><b>Smaller AI models can handle big questions efficiently.</b> By learning from multiple tasks, these models give fast, accurate answers without expensive computing.</p>
+        <h5 class="mt-4"><b>Key Points</b></h5>
+        <ul>
+          <li>Can answer new questions without prior examples.</li>
+          <li>Trained on a variety of tasks for broad reasoning.</li>
+          <li>Faster and more energy-efficient than large models.</li>
+        </ul>
+        <p><a href="https://arxiv.org/abs/2308.00946v2" target="_blank" class="btn btn-outline-primary">📖 Read More</a></p>
+      </div>
+    </div>
+
   </div>
+
+<!-- Footer -->
+<footer class="text-center py-3 bg-dark text-white">
+  <div class="d-flex justify-content-center align-items-center mb-2">
+    <img src="img/logot.png" alt="AkoSophia Logo" style="height: 40px; margin-right: 10px;">
+    <span>&copy; 2023 AkoSophia. All rights reserved.</span>
+  </div>
+</footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
